@@ -12,4 +12,4 @@ Do so by running the following commands:
 > $ git push --set-upstream origin feature-name
 
 Once you have your scripts in the repo create a pull request back to this repo 
-and we will add it back in as well as make you a member of the KeyLUG org.
+and we will add it as well as make you a member of the KeyLUG org.
