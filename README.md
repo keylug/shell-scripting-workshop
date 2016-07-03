@@ -13,3 +13,5 @@ Do so by running the following commands:
 
 Once you have your scripts in the repo create a pull request back to this repo 
 and we will add it as well as make you a member of the KeyLUG org.
+
+Lastly be sure to update the PRESENTERS.md with your name, topic, and time.
