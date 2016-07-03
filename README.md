@@ -4,6 +4,9 @@ you will be able to add the code you want to demo.
 
 Do so by running the following commands:
 > $ git checkout -b feature-name
+
 > $ git add /path/to/script
+
 > $ git commit -m 'commit message'
-> $ git push feature-name
+
+> $ git push --set-upstream origin feature-name
