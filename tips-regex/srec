@@ -9,4 +9,3 @@ rec -r 44100 -c 1 ${SOXREC}.wav
 #
 normalize -a -20dBFS ${SOXREC}.wav
 #
-
