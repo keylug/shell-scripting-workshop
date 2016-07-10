@@ -2,4 +2,3 @@
 read -p "Enter file to encrypt: " gpgFilein
 gpg -ear marwalk@marwalk.com $gpgFilein
 #
-
