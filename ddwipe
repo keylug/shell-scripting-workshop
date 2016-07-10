@@ -1,0 +1,7 @@
+#! /bin/bash
+#
+read -p "Enter drive without the \"dev\": " DV
+printf "Wiping /dev/${DV}\n"
+sudo dc3dd wipe=/dev/${DV} verb=on
+#
+
