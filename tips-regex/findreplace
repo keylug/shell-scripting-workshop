@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+read -p "Enter text to be replaced: " OLDTX
+read -p "Enter new text to replace old: " NEWTX
+read -p "Enter file to be acted upon: " TARGET
+#OLDTX=$(grep old target)
+echo "Old text is \"${OLDTX}\""
+#NEWTX="new text"
+echo "New text replacing it is \"${NEWTX}\""
+sed -i "s/${OLDTX}/${NEWTX}/g" ${TARGET}
+# cat target
+grep -n ${NEWTX} ${TARGET}
+#
+
