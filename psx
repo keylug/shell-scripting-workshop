@@ -1,5 +1,0 @@
-#! /bin/bash
-#
-ps ax | grep ${1} | grep -v "bin/psx" | grep -v "grep ${1}"
-#
-
