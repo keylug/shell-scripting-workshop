@@ -1,0 +1,12 @@
+#! /bin/bash
+#
+read -p "Enter sox input file prefix to record: " SOXREC
+if [ -f ${SOXREC}.wav ];
+then
+rm ${SOXREC}.wav
+fi
+rec -r 44100 -c 1 ${SOXREC}.wav
+#
+normalize -a -20dBFS ${SOXREC}.wav
+#
+
