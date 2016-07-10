@@ -1,0 +1,7 @@
+#! /bin/bash
+read -p "Enter file to decrypt: " gpgFilein
+gpgFileout=$(echo $gpgFilein | sed 's/.\{4\}$//')
+gpg -o $gpgFileout -d $gpgFilein
+ls -l $gpgFilein $gpgFileout
+#
+

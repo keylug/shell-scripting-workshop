@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+gpgFilein="filename.asc"
+gpgFileout=$(echo ${gpgFilein} | sed 's/.\{4\}$//')
+printf "\n gpgFilein is ${gpgFilein}\n gpgFileout is ${gpgFileout}\n"
+printf "Code that did this: \"gpgFileout=\$(echo \${gpgFilein} | sed 's/.\{4\}$//')\"\n"
+#
+
