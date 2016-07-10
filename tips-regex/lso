@@ -7,4 +7,3 @@ COMMENT01
 read -p 'Enter file search criteria (e.g. "*.conf"): ' LSO
 stat -c '%A %a %h %U %G %s %y %n' ${LSO} | sed 's/\.[[:digit:]]\+[ ]\+-[[:digit:]]\+/ /'
 #
-
