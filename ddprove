@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+read -p "Enter drive without the \"dev\": " DV
+rm -v ${DV}.str
+printf "Proving wiping of /dev/${DV}\n"
+sudo dc3dd if=/dev/${DV} verb=on | strings | tee ${DV}.str
+#
+

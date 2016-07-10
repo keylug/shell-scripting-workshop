@@ -1,0 +1,10 @@
+#!/bin/bash
+
+: << 'COMMENT01'
+The purpose of this script is to provide an "ls" function that includes octal file permissions in its display.
+COMMENT01
+
+read -p 'Enter file search criteria (e.g. "*.conf"): ' LSO
+stat -c '%A %a %h %U %G %s %y %n' ${LSO} | sed 's/\.[[:digit:]]\+[ ]\+-[[:digit:]]\+/ /'
+#
+

@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+printf "Run from directory above the \"trans\" directory.\n"
+#
+rm -v ./trans/*
+#
+rsync -v --exclude="trans/" $(ls -l | grep $(echo $(date | awk -F" " '{print $2}')) | grep " $(echo $(date | awk -F" " '{print $3}')) " | awk -F" " '{print $9}') trans
+#
+ls -lrt trans/*
+#
+
