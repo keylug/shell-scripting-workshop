@@ -8,4 +8,3 @@ done
 printf "========== VNC proc cleaning completed ========\n"
 psvnc | grep -v vnckill | grep -v "grep"
 #
-
