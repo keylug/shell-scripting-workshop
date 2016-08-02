@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# psvnc | grep -v End | grep noxdamage | awk -F" " '{print $1}'
+for KILLPS in $(/home/marwalk/bin/psvnc | grep -v End | grep noxdamage | grep -v forever | awk -F" " '{print $1}')
+do
+kill ${KILLPS}
+done
+printf "========== VNC proc cleaning completed ========\n"
+psvnc | grep -v vnckill | grep -v "grep"
+#
+

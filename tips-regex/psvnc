@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+PSVNC=`ps ax | grep vnc | grep -v psvnc | grep -v grep`
+printf "$PSVNC\n" | grep -v forever
+printf "End of list.\n"
+printf "$PSVNC\n" | grep forever
+printf "Any VNC listening after end of list.\n"
+#
+
