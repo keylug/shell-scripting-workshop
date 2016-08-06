@@ -7,4 +7,4 @@
 [http://www.tldp.org/LDP/abs/html/here-docs.html](http://www.tldp.org/LDP/abs/html/here-docs.html)
 
 ## shellcheck
-[ShellCheck, a static analysis tool for shell scripts](http://http://www.shellcheck.net/)
+[ShellCheck, a static analysis tool for shell scripts](http://www.shellcheck.net/)
